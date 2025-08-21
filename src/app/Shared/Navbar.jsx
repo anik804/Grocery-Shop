@@ -92,24 +92,23 @@ const Navbar = () => {
       </div>
 
       {/* Right Side */}
-{/* Right Side */}
-<div className="navbar-end flex gap-2">
-  <motion.a
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="btn btn-outline rounded-lg border-2 border-green-900 text-green-900 hover:bg-green-200 hover:text-green-900 transition-all duration-300"
-  >
-    Register
-  </motion.a>
-  <motion.a
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="btn rounded-lg bg-green-900 text-white hover:bg-green-800 shadow-md hover:shadow-lg transition-all duration-300"
-  >
-    Login
-  </motion.a>
-</div>
-
+      {/* Right Side */}
+      <div className="navbar-end flex gap-2">
+        <motion.a
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="btn btn-outline rounded-lg border-2 border-green-900 text-green-900 hover:bg-green-200 hover:text-green-900 transition-all duration-300"
+        >
+          Register
+        </motion.a>
+        <motion.a
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="btn rounded-lg bg-green-900 text-white hover:bg-green-800 shadow-md hover:shadow-lg transition-all duration-300"
+        >
+          Login
+        </motion.a>
+      </div>
     </motion.div>
   );
 };
