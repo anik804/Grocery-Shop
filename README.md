@@ -1,5 +1,5 @@
-````markdown
-# Grocery Shop - Next.js 🛒
+
+### Grocery Shop - Next.js 🛒
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=flat&logo=vercel)](https://grocery-shop-nextjs-9fn0aqi32-anik804s-projects.vercel.app)
@@ -8,13 +8,13 @@ A modern and responsive grocery shopping web application built with **Next.js**,
 
 ---
 
-## 🌐 Live Demo
+### 🌐 Live Demo
 
 Check out the live website here: [Grocery Shop Live](https://grocery-shop-nextjs.vercel.app/)
 
 ---
 
-## 📸 Screenshots
+### 📸 Screenshots
 
 ![Home Page](https://i.ibb.co/YourScreenshotLink/home.png)  
 ![Product Page](https://i.ibb.co/YourScreenshotLink/product.png)  
@@ -23,7 +23,7 @@ Check out the live website here: [Grocery Shop Live](https://grocery-shop-nextjs
 
 ---
 
-## 🛠 Features
+### 🛠 Features
 
 - Browse grocery products by categories  
 - Product detail pages with descriptions and images  
@@ -34,7 +34,7 @@ Check out the live website here: [Grocery Shop Live](https://grocery-shop-nextjs
 
 ---
 
-## 💻 Technologies Used
+### 💻 Technologies Used
 
 - **[Next.js](https://nextjs.org/)** - React framework for server-side rendering  
 - **[React](https://reactjs.org/)** - UI library  
