@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import Link from "next/link";
 import { signIn } from "next-auth/react";
-import { FcGoogle } from "react-icons/fc";
-import { FaGithub } from "react-icons/fa";
 import loginAnimation from "../../../public/lottie/Login.json"; // place your Lottie file here
+import LoginForm from "./components/LoginForm";
+import SocialLogin from "./components/SocialLogin";
 
 export default function LoginPage() {
   return (
@@ -34,32 +34,7 @@ export default function LoginPage() {
           </motion.h2>
 
           {/* Form */}
-          <form className="space-y-4">
-            {/* Email Input */}
-            <motion.input
-              type="email"
-              placeholder="Email Address"
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:scale-[1.02] transition"
-              whileFocus={{ scale: 1.02 }}
-            />
-
-            {/* Password Input */}
-            <motion.input
-              type="password"
-              placeholder="Password"
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 focus:scale-[1.02] transition"
-              whileFocus={{ scale: 1.02 }}
-            />
-
-            {/* Login Button */}
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg shadow-lg font-semibold transition"
-            >
-              Login
-            </motion.button>
-          </form>
+          <LoginForm></LoginForm>
 
           {/* OR Divider */}
           <div className="my-6 flex items-center">
@@ -69,32 +44,14 @@ export default function LoginPage() {
           </div>
 
           {/* Social Logins */}
-          <div className="flex flex-col gap-3">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => signIn("google")}
-              className="flex items-center justify-center gap-3 w-full border border-gray-300 py-3 rounded-lg shadow-sm hover:bg-gray-100 transition"
-            >
-              <FcGoogle size={22} />
-              <span className="font-medium">Continue with Google</span>
-            </motion.button>
-
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={() => signIn("github")}
-              className="flex items-center justify-center gap-3 w-full border border-gray-300 py-3 rounded-lg shadow-sm hover:bg-gray-100 transition"
-            >
-              <FaGithub size={22} className="text-gray-800" />
-              <span className="font-medium">Continue with GitHub</span>
-            </motion.button>
-          </div>
-
+          <SocialLogin></SocialLogin>
           {/* Register Link */}
           <p className="mt-4 text-center text-sm text-gray-600">
             Don’t have an account?{" "}
-            <Link href="/register" className="text-green-700 font-semibold hover:underline">
+            <Link
+              href="/register"
+              className="text-green-700 font-semibold hover:underline"
+            >
               Register
             </Link>
           </p>

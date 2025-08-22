@@ -2,9 +2,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
-import { FaGoogle, FaGithub } from "react-icons/fa";
 import registerAnimation from "../../../public/lottie/register.json"; // make sure your file is here
 import RegisterForm from "./components/RegisterForm";
+import SocialLogin from "./components/SocialLogin";
 
 export default function RegisterPage() {
   return (
@@ -44,25 +44,7 @@ export default function RegisterPage() {
           </div>
 
           {/* Social Login Buttons */}
-          <div className="flex gap-4 justify-center">
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 px-5 py-3 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-600 transition"
-            >
-              <FaGoogle className="text-lg" />
-              Google
-            </motion.button>
-
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 px-5 py-3 bg-gray-800 text-white rounded-lg shadow-md hover:bg-black transition"
-            >
-              <FaGithub className="text-lg" />
-              GitHub
-            </motion.button>
-          </div>
+          <SocialLogin></SocialLogin>
 
           <p className="mt-4 text-center text-sm text-gray-600">
             Already have an account?{" "}

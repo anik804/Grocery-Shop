@@ -11,16 +11,17 @@ export const registerUser = async (payload) => {
   // validation process
   const { name, email, password } = payload;
   if (!name || !email || !password) {
-    return { success: false, message: "All fields are required." };
+    return null;
   }
   const user = await userCollection.findOne({ email: payload.email });
   if (!user) {
     const hashedPassword = await bcrypt.hash(password, 10);
     payload.password = hashedPassword; // hash the password before saving
     const result = await userCollection.insertOne(payload);
-    console.log("User registered successfully:", result);
-    const { acknowledged,insertedId} = result;
-    return { acknowledged, insertedId};
+    // console.log("User registered successfully:", result);
+    // const { acknowledged,insertedId} = result;
+    result.insertedId = result.insertedId.toString();
+    return result;
   }
-  return { success: false, message: "User already exists."};
+  return null;
 };

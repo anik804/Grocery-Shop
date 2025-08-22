@@ -1,12 +1,18 @@
 import React from 'react'
+import Banner from './Components/Banner'
+import Ratings from './Components/Ratings'
+import AboutUs from './Components/AboutUs'
+import WhyChooseUs from '@/app/whyus/page'
+import FeaturedProducts from './Components/featuredProducts'
 
 function componentName() {
   return (
     <div>
-      <h1>Home Page</h1>
-      <p>Welcome to the Grocery Shop!</p>
-      <p>Explore our wide range of products.</p>
-      <p>Enjoy shopping with us!</p>
+      <Banner></Banner>
+      <FeaturedProducts></FeaturedProducts>
+      <WhyChooseUs></WhyChooseUs>
+      <Ratings></Ratings>
+      <AboutUs></AboutUs>
     </div>
   )
 }
