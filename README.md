@@ -14,15 +14,6 @@ Check out the live website here: [Grocery Shop Live](https://grocery-shop-nextjs
 
 ---
 
-### 📸 Screenshots
-
-![Home Page](https://i.ibb.co/YourScreenshotLink/home.png)  
-![Product Page](https://i.ibb.co/YourScreenshotLink/product.png)  
-
-*(Replace the links with actual screenshots of your project)*
-
----
-
 ### 🛠 Features
 
 - Browse grocery products by categories  
